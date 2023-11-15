@@ -1,9 +1,3 @@
-from tinydb import TinyDB, Query
-
-
-db = TinyDB('db.json')
-
-Form = Query()
 
 data = [
     {'name': 'CustomerForm', 'fields': {
@@ -37,12 +31,3 @@ data = [
         'cooperation': 'text'
     }, },
 ]
-
-# for i in data:
-#     db.insert(i)
-
-for i in db:
-    i = dict(i)
-    print(type(i))
-    print(i)
-

@@ -47,4 +47,4 @@ def get_form(
 
 @app.get('/get_all/', status_code=status.HTTP_200_OK)
 def get_all():
-    return db.all()
+    return {'result': list(db.all())}
